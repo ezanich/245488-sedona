@@ -84,7 +84,7 @@
 			</section>
 
 			<section class="reservation">
-				<a href="#">Поиск гостиницы в седоне</a>
+				<a href="search.html">Поиск гостиницы в седоне</a>
 				<form class="reservation-form" action="https://echo.htmlacademy.ru" method="get">
 					<p class="reservation-item">
 						<label for="check-in">Дата заезда</label>
@@ -96,15 +96,13 @@
 					</p>
 					<p class="reservation-item">
 						<label for="adults">Взрослые</label>
-						<input type="number" name="adults" id="adults" value="2">
+						<input type="number" name="adults" id="adults" value="2" min="0">
 					</p>
 					<p class="reservation-item">
 						<label for="children">Дети</label>
-						<input type="number" name="children" id="children" value="0">
+						<input type="number" name="children" id="children" value="0" min="0">
 					</p>
-					<p>
-						<button class="search-button" type="submit">Найти</button>
-					</p>
+					<button class="search-button" type="submit">Найти</button>
 				</form>
 			</section>
 		</main>
@@ -121,7 +119,7 @@
 				</ul>
 			</div>
 			<div class="copyright">
-				<p>Website by 
+				<p>Website by
 					<a href="https://htmlacademy.ru/intensive/htmlcss">
 						<img src="img/html-academy-logo.svg" alt="HTML Academy" width="115" height="41">HTML Academy
 					</a>

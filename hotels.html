@@ -56,18 +56,21 @@
                 				<label for="motel-checkbox">Мотель</label>
                 			</li>
                 			<li class="filter-option">
-                				<input type="checkbox" name="apartment" id="apartment-checkbox" checked> 
+                				<input type="checkbox" name="apartment" id="apartment-checkbox" checked>
                 				<label for="apartment-checkbox">Апартаменты</label>
                 			</li>
                 		</ul>
                 	</fieldset>
                 	<fieldset>
                 		<legend>Стоимость в сутки (Р):</legend>
-                		<label class="visually-hidden" for="price-field-from">Стоимость в сутки от</label>
-                		<input type="text" name="price" id="price-field-from" value="от 0">
-                		<label class="visually-hidden" for="price-field-to">Стоимость в сутки до</label>
-                		<input type="text" name="price" id="price-field-to" value="до 3000">
-                		<!--<input type="range" name="price" id="price-range">-->
+                		<label class="visually-hidden" for="price-field-from">От</label>
+                		<input type="text" name="price" id="price-field-from" value="0">
+                		<label class="visually-hidden" for="price-field-to">До</label>
+                		<input type="text" name="price" id="price-field-to" value="3000">
+                    <div>
+                      <img src="img/filter-button.svg" width="20" height="22" alt="Минимальное значение">
+                      <img src="img/filter-button.svg" width="20" height="22" alt="Максимальное значение">
+                    </div>
                 	</fieldset>
                 	<button type="submit">Показать</button>
                 </form>
@@ -81,12 +84,16 @@
             		<a href="#">По цене</a>
             		<a href="#">По типу</a>
             		<a href="#">По рейтингу</a>
+                <div>
+                  <img src="img/icon-up.svg" width="11" height="10" alt="По возрастанию">
+                  <img src="img/icon-down.svg" width="11" height="10" alt="По убыванию">
+                </div>
             	</p>
             </section>
 
             <section class="choosing-hotel">
                 <h2 class="visually-hidden">Список подходящих отелей</h2>
-                
+
                 <ul class="hotels-list">
                     <li class="hotel-description">
                         <img src="img/foto-1.jpg" alt="Amara resort & spa" width="135" height="90">
@@ -99,7 +106,7 @@
                             <img src="img/star.svg" alt="Звездность отеля" width="18" height="17">
                             <img src="img/star.svg" alt="Звездность отеля" width="18" height="17">
                             <img src="img/star.svg" alt="Звездность отеля" width="18" height="17">
-                            <img src="img/star.svg" alt="Звездность отеля" width="18" height="17">            
+                            <img src="img/star.svg" alt="Звездность отеля" width="18" height="17">
                         </div>
                         <span class="rating">Рейтинг: 8,5</span>
                     </li>
@@ -114,7 +121,7 @@
                         <div class="star">
                             <img src="img/star.svg" alt="Звездность отеля" width="18" height="17">
                             <img src="img/star.svg" alt="Звездность отеля" width="18" height="17">
-                            <img src="img/star.svg" alt="Звездность отеля" width="18" height="17">            
+                            <img src="img/star.svg" alt="Звездность отеля" width="18" height="17">
                         </div>
                         <span class="rating">Рейтинг: 8,9</span>
                     </li>
@@ -128,7 +135,7 @@
                         <a href="#" class="button-reserve">Забронировать</a>
                         <div class="star">
                             <img src="img/star.svg" alt="Звездность отеля" width="18" height="17">
-                            <img src="img/star.svg" alt="Звездность отеля" width="18" height="17">           
+                            <img src="img/star.svg" alt="Звездность отеля" width="18" height="17">
                         </div>
                         <span class="rating">Рейтинг: 9,2</span>
                     </li>
@@ -148,7 +155,7 @@
                 </ul>
             </div>
             <div class="copyright">
-                <p>Website by 
+                <p>Website by
                     <a href="https://htmlacademy.ru/intensive/htmlcss">
                         <img src="img/html-academy-logo.svg" alt="HTML Academy" width="115" height="41">HTML Academy
                     </a>
