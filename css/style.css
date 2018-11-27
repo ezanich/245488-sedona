@@ -1,0 +1,179 @@
+body {
+	margin: 0;
+
+	font-family: "PT Sans", Arial, sans-serif; 
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #f2f2f2;
+}
+
+.main-container {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-navigation {
+	font-weight: 700;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation a {
+	color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+	color: #81b3d2;
+}
+
+.site-navigation a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.promo {
+	text-align: center;
+
+	background-image: url("../img/background-photo.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.promo div {
+	background-color: #ffffff;
+}
+
+.promo h2{
+	font-size: 26;
+	font-weight: 700;
+}
+
+.promo p {
+	color: #333333;
+}
+
+
+.reserve {
+	text-align: center;
+
+	background-color: #ffffff;
+
+	color: #333333;
+}
+
+.reserve b {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 700;
+}
+
+.reserve p {
+	line-height: 24px;
+	color: #333333;
+}
+
+.reservation {
+	text-align: center;
+}
+
+.reservation a {
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+	color: #ffffff;
+
+	background-color: #766357;
+}
+
+.reservation a:hover,
+.reservation a:focus {
+	background-color: #604e43;
+}
+
+.reservation a:active {
+	background-color: #503e33;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.reservation-form {
+	background-color: #ffffff;
+}
+
+.reservation-item input {
+	font: inherit;
+	text-transform: uppercase;
+	font-weight: 700;
+
+	background-color: #f2f2f2;
+
+	border: none;
+}
+
+.reservation-item label {
+	font-weight: 700;
+}
+
+.reservation-item input:hover {
+	background-color: #ebebeb;
+	border: none;
+}
+
+.reservation-item input:active,
+.reservation-item input:focus {
+	outline: 2px solid #e5e5e5;
+	background-color: #ffffff;
+}
+
+.search-button {
+	color: #ffffff;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+
+	background-color: #81b3d2;
+
+	border: none;
+}
+
+.search-button:hover {
+	background-color: #669ec0;
+}
+
+.search-button:active,
+.search-button:focus {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer {
+	color: #000000;
+
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.main-footer span {
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+}
+
+.social ul {
+	list-style: none;
+}
+
+.social a {
+	color: #000000;
+}
