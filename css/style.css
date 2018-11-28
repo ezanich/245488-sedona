@@ -12,8 +12,7 @@ body {
 }
 
 .main-container {
-	padding-left: 40px;
-	padding-right: 40px;
+	box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 a {
@@ -46,22 +45,32 @@ a {
 
 .promo {
 	text-align: center;
+	padding-top: 76px;
 
 	background-image: url("../img/background-photo.jpg");
-	background-position: top center;
+	background-position: bottom center;
 	background-repeat: no-repeat;
 }
 
-.promo div {
+.polygon {
+	height: 79px;
+
+	background-image: url("../img/polygon.svg");
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+
+.promo-text {
+	height: 216px;
 	background-color: #ffffff;
 }
 
-.promo h2{
+.promo-text h2{
 	font-size: 26;
 	font-weight: 700;
 }
 
-.promo p {
+.promo-text p {
 	color: #333333;
 }
 
@@ -148,14 +157,33 @@ a {
 	border: none;
 }
 
-.search-button:hover {
+.search-button:hover,
+.search-button:focus {
 	background-color: #669ec0;
 }
 
-.search-button:active,
-.search-button:focus {
+.search-button:active {
 	background-color: #5496bd;
 	color: rgba(255, 255, 255, 0.3);
+}
+
+.hotels-list {
+	list-style: none;
+}
+
+.hotel-description a {
+	font-size: 21px;
+	color: #000000;
+	font-weight: 700;
+}
+
+.hotel-description a:hover,
+.hotel-description a:focus {
+	color: #81b3d2;
+}
+
+.hotel-description a:active {
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .main-footer {
@@ -176,4 +204,28 @@ a {
 
 .social a {
 	color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
 }
