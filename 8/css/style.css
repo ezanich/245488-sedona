@@ -1,0 +1,216 @@
+body {
+	margin: 0;
+
+	font-family: "PT Sans", Arial, sans-serif; 
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #f2f2f2;
+}
+
+.main-container {
+	box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.main-navigation {
+	font-weight: 700;
+	color: #000000;
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+	color: #81b3d2;
+}
+
+.site-navigation a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.promo {
+	text-align: center;
+	background-image: url("../img/background-photo.jpg");
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+
+.promo-text {
+	background-color: #ffffff;
+}
+
+.promo-text h2{
+	font-size: 26;
+	font-weight: 700;
+}
+
+.promo-text p {
+	color: #333333;
+}
+
+.reserve {
+	text-align: center;
+	color: #333333;
+}
+
+.reserve b {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 700;
+}
+
+.reserve p {
+	line-height: 24px;
+	color: #333333;
+}
+
+.reservation {
+	text-align: center;
+}
+
+.reservation a {
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+	color: #ffffff;
+
+	background-color: #766357;
+}
+
+.button-brown:hover,
+.button-brown:focus {
+	background-color: #604e43;
+}
+
+.button-brown:active {
+	background-color: #503e33;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.reservation-item input {
+	font: inherit;
+	text-transform: uppercase;
+	font-weight: 700;
+
+	background-color: #f2f2f2;
+
+	border: none;
+}
+
+.reservation-item label {
+	font-weight: 700;
+}
+
+.reservation-item input:hover {
+	background-color: #ebebeb;
+	border: none;
+}
+
+.reservation-item input:active,
+.reservation-item input:focus {
+	outline: 2px solid #e5e5e5;
+	background-color: #ffffff;
+}
+
+.search-button {
+	color: #ffffff;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+
+	background-color: #81b3d2;
+
+	border: none;
+}
+
+.button-blue:hover,
+.button-blue:focus {
+	background-color: #669ec0;
+}
+
+.button-blue:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.hotels-list {
+	list-style: none;
+}
+
+.hotels-list a:first-of-type {
+	font-size: 21px;
+	font-weight: 700;
+}
+
+.hotel-description a:first-of-type:hover,
+.hotel-description a:first-of-type:focus {
+	color: #81b3d2;
+}
+
+.hotel-description a:first-of-type:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.button-info {
+	color: #ffffff;
+	line-height: 21px;
+	font-weight: 700;
+
+	background-color: #81b3d2;
+}
+
+.hotel-type,
+.price-for-night {
+	color: #333333;
+}
+
+.button-reserve {
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
+
+	background-color: #766357;
+}
+
+.rating {
+	line-height: 21px;
+	color: #666666;
+	background-color: #f2f2f2;
+}
+
+.main-footer {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.main-footer span {
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+}
+
+.social ul {
+	list-style: none;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
