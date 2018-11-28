@@ -13,25 +13,21 @@ body {
 
 .main-container {
 	box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+	background-color: #ffffff;
 }
 
 a {
 	text-decoration: none;
+	color: #000000;
 }
 
 .main-navigation {
 	font-weight: 700;
 	color: #000000;
-
-	background-color: #ffffff;
 }
 
 .site-navigation {
 	list-style: none;
-}
-
-.site-navigation a {
-	color: #000000;
 }
 
 .site-navigation a:hover,
@@ -45,23 +41,12 @@ a {
 
 .promo {
 	text-align: center;
-	padding-top: 76px;
-
 	background-image: url("../img/background-photo.jpg");
 	background-position: bottom center;
 	background-repeat: no-repeat;
 }
 
-.polygon {
-	height: 79px;
-
-	background-image: url("../img/polygon.svg");
-	background-position: bottom center;
-	background-repeat: no-repeat;
-}
-
 .promo-text {
-	height: 216px;
 	background-color: #ffffff;
 }
 
@@ -74,12 +59,8 @@ a {
 	color: #333333;
 }
 
-
 .reserve {
 	text-align: center;
-
-	background-color: #ffffff;
-
 	color: #333333;
 }
 
@@ -107,18 +88,14 @@ a {
 	background-color: #766357;
 }
 
-.reservation a:hover,
-.reservation a:focus {
+.button-brown:hover,
+.button-brown:focus {
 	background-color: #604e43;
 }
 
-.reservation a:active {
+.button-brown:active {
 	background-color: #503e33;
 	color: rgba(255, 255, 255, 0.3);
-}
-
-.reservation-form {
-	background-color: #ffffff;
 }
 
 .reservation-item input {
@@ -157,12 +134,12 @@ a {
 	border: none;
 }
 
-.search-button:hover,
-.search-button:focus {
+.button-blue:hover,
+.button-blue:focus {
 	background-color: #669ec0;
 }
 
-.search-button:active {
+.button-blue:active {
 	background-color: #5496bd;
 	color: rgba(255, 255, 255, 0.3);
 }
@@ -171,24 +148,44 @@ a {
 	list-style: none;
 }
 
-.hotel-description a {
+.hotels-list a:first-of-type {
 	font-size: 21px;
-	color: #000000;
 	font-weight: 700;
 }
 
-.hotel-description a:hover,
-.hotel-description a:focus {
+.hotel-description a:first-of-type:hover,
+.hotel-description a:first-of-type:focus {
 	color: #81b3d2;
 }
 
-.hotel-description a:active {
+.hotel-description a:first-of-type:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.main-footer {
-	color: #000000;
+.button-info {
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
 
+	background-color: #81b3d2;
+}
+
+.button-reserve {
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
+
+	background-color: #766357;
+}
+
+.rating {
+	color: #666666;
+	background-color: #f2f2f2;
+}
+
+.main-footer {
 	background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -201,23 +198,6 @@ a {
 .social ul {
 	list-style: none;
 }
-
-.social a {
-	color: #000000;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .visually-hidden {
 	position: absolute !important;
