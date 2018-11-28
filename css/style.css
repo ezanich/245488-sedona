@@ -164,11 +164,15 @@ a {
 
 .button-info {
 	color: #ffffff;
-	font-size: 14px;
 	line-height: 21px;
 	font-weight: 700;
 
 	background-color: #81b3d2;
+}
+
+.hotel-type,
+.price-for-night {
+	color: #333333;
 }
 
 .button-reserve {
@@ -181,6 +185,7 @@ a {
 }
 
 .rating {
+	line-height: 21px;
 	color: #666666;
 	background-color: #f2f2f2;
 }
