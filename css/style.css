@@ -23,7 +23,6 @@ a {
 
 .main-navigation {
 	font-weight: 700;
-	color: #000000;
 }
 
 .site-navigation {
@@ -50,8 +49,8 @@ a {
 	background-color: #ffffff;
 }
 
-.promo-text h2{
-	font-size: 26;
+.promo-text h2 {
+	font-size: 26px;
 	font-weight: 700;
 }
 
@@ -148,17 +147,17 @@ a {
 	list-style: none;
 }
 
-.hotels-list a:first-of-type {
+.hotel-name h3 {
 	font-size: 21px;
 	font-weight: 700;
 }
 
-.hotel-description a:first-of-type:hover,
-.hotel-description a:first-of-type:focus {
+.hotel-name:hover,
+.hotel-name:focus {
 	color: #81b3d2;
 }
 
-.hotel-description a:first-of-type:active {
+.hotel-name:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
