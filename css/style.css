@@ -12,27 +12,21 @@ body {
 }
 
 .main-container {
-	padding-left: 40px;
-	padding-right: 40px;
+	box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+	background-color: #ffffff;
 }
 
 a {
 	text-decoration: none;
+	color: #000000;
 }
 
 .main-navigation {
 	font-weight: 700;
-	color: #000000;
-
-	background-color: #ffffff;
 }
 
 .site-navigation {
 	list-style: none;
-}
-
-.site-navigation a {
-	color: #000000;
 }
 
 .site-navigation a:hover,
@@ -46,31 +40,26 @@ a {
 
 .promo {
 	text-align: center;
-
 	background-image: url("../img/background-photo.jpg");
-	background-position: top center;
+	background-position: bottom center;
 	background-repeat: no-repeat;
 }
 
-.promo div {
+.promo-text {
 	background-color: #ffffff;
 }
 
-.promo h2{
-	font-size: 26;
+.promo-text h2 {
+	font-size: 26px;
 	font-weight: 700;
 }
 
-.promo p {
+.promo-text p {
 	color: #333333;
 }
 
-
 .reserve {
 	text-align: center;
-
-	background-color: #ffffff;
-
 	color: #333333;
 }
 
@@ -98,18 +87,14 @@ a {
 	background-color: #766357;
 }
 
-.reservation a:hover,
-.reservation a:focus {
+.button-brown:hover,
+.button-brown:focus {
 	background-color: #604e43;
 }
 
-.reservation a:active {
+.button-brown:active {
 	background-color: #503e33;
 	color: rgba(255, 255, 255, 0.3);
-}
-
-.reservation-form {
-	background-color: #ffffff;
 }
 
 .reservation-item input {
@@ -148,19 +133,63 @@ a {
 	border: none;
 }
 
-.search-button:hover {
+.button-blue:hover,
+.button-blue:focus {
 	background-color: #669ec0;
 }
 
-.search-button:active,
-.search-button:focus {
+.button-blue:active {
 	background-color: #5496bd;
 	color: rgba(255, 255, 255, 0.3);
 }
 
-.main-footer {
-	color: #000000;
+.hotels-list {
+	list-style: none;
+}
 
+.hotel-name h3 {
+	font-size: 21px;
+	font-weight: 700;
+}
+
+.hotel-name:hover,
+.hotel-name:focus {
+	color: #81b3d2;
+}
+
+.hotel-name:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.button-info {
+	color: #ffffff;
+	line-height: 21px;
+	font-weight: 700;
+
+	background-color: #81b3d2;
+}
+
+.hotel-type,
+.price-for-night {
+	color: #333333;
+}
+
+.button-reserve {
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
+
+	background-color: #766357;
+}
+
+.rating {
+	line-height: 21px;
+	color: #666666;
+	background-color: #f2f2f2;
+}
+
+.main-footer {
 	background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -174,6 +203,13 @@ a {
 	list-style: none;
 }
 
-.social a {
-	color: #000000;
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
 }
