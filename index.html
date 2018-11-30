@@ -27,8 +27,7 @@
 				<section class="promo">
 					<img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
 					<div class="promo-text">
-						<h2>Седона — небольшой городок в Аризоне,<br>
-							заслуживающий большего!</h2>
+						<h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
 						<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 					</div>
 				</section>
@@ -88,29 +87,39 @@
 					<b>Заинтересовались?</b>
 					<p>Укажите предполагаемые даты поездки,<br>
 					    и мы покажем вам лучшие предложения гостиниц в седоне</p>
+					<a class="button-drop" href="search.html">Поиск гостиницы в седоне</a>
+
+					<section class="reservation">
+						<form class="reservation-form" action="https://echo.htmlacademy.ru" method="get">
+							<p class="reservation-item">
+								<label for="check-in">Дата заезда: </label>
+								<input type="text" name="check-in" id="check-in" value="24 апреля 2017">
+								<button type="button" class="button-control button-calendar"></button>
+							</p>
+							<p class="reservation-item">
+								<label for="check-out">Дата выезда: </label>
+								<input type="text" name="check-out" id="check-out" value="4 июля 2017">
+								<button type="button" class="button-control button-calendar"></button>
+							</p>
+							<p class="reservation-item">
+								<label for="adults">Взрослые: </label>
+								<button type="button" class="button-control button-minus" aria-label="Уменьшить количество"></button>
+								<input type="text" name="adults" id="adults" value="2">
+								<button type="button" class="button-control button-plus" aria-label="Увеличить количество"></button>
+							</p>
+							<p class="reservation-item">
+								<label for="children">Дети: </label>
+								<button type="button" class="button-control button-minus" aria-label="Уменьшить количество"></button>
+								<input type="text" name="children" id="children" value="0">
+								<button type="button" class="button-control button-plus" aria-label="Увеличить количество"></button>
+							</p>
+							<button class="search-button" type="submit">Найти</button>
+						</form>
+					</section>
 				</section>
 
-				<section class="reservation">
-					<a class="button-brown" href="search.html">Поиск гостиницы в седоне</a>
-					<form class="reservation-form" action="https://echo.htmlacademy.ru" method="get">
-						<p class="reservation-item">
-							<label for="check-in">Дата заезда: </label>
-							<input type="text" name="check-in" id="check-in" value="24 апреля 2017">
-						</p>
-						<p class="reservation-item">
-							<label for="check-out">Дата выезда: </label>
-							<input type="text" name="check-out" id="check-out" value="4 июля 2017">
-						</p>
-						<p class="reservation-item">
-							<label for="adults">Взрослые: </label>
-							<input type="number" name="adults" id="adults" value="2" min="0">
-						</p>
-						<p class="reservation-item">
-							<label for="children">Дети: </label>
-							<input type="number" name="children" id="children" value="0" min="0">
-						</p>
-						<button class="search-button button-blue" type="submit">Найти</button>
-					</form>
+				<section class="map-image">
+					<img src="img/map.jpg" alt="Карта города">
 				</section>
 			</main>
 
@@ -120,9 +129,9 @@
 				</div>
 				<div class="social">
 					<ul>
-						<li><a href="#" class="social-button button-blue" aria-label="Мы в Твиттере">Twitter</a></li>
-						<li><a href="#" class="social-button button-blue" aria-label="Мы на Facebook">Facebook</a></li>
-						<li><a href="#" class="social-button button-blue" aria-label="Мы на Youtube">Youtube</a></li>
+						<li><a href="#" class="social-button" aria-label="Мы в Твиттере">Twitter</a></li>
+						<li><a href="#" class="social-button" aria-label="Мы на Facebook">Facebook</a></li>
+						<li><a href="#" class="social-button" aria-label="Мы на Youtube">Youtube</a></li>
 					</ul>
 				</div>
 				<div class="copyright">
