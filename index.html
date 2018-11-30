@@ -91,23 +91,29 @@
 				</section>
 
 				<section class="reservation">
-					<a class="button-brown" href="search.html">Поиск гостиницы в седоне</a>
+					<a class="button-drop button-brown" href="search.html">Поиск гостиницы в седоне</a>
 					<form class="reservation-form" action="https://echo.htmlacademy.ru" method="get">
 						<p class="reservation-item">
 							<label for="check-in">Дата заезда: </label>
 							<input type="text" name="check-in" id="check-in" value="24 апреля 2017">
+							<button type="button" class="button-control calendar"></button>
 						</p>
 						<p class="reservation-item">
 							<label for="check-out">Дата выезда: </label>
 							<input type="text" name="check-out" id="check-out" value="4 июля 2017">
+							<button type="button" class="button-control calendar"></button>
 						</p>
 						<p class="reservation-item">
 							<label for="adults">Взрослые: </label>
-							<input type="number" name="adults" id="adults" value="2" min="0">
+							<button type="button" class="button-control minus"></button>
+							<input type="text" name="adults" id="adults" value="2">
+							<button type="button" class="button-control plus"></button>
 						</p>
 						<p class="reservation-item">
 							<label for="children">Дети: </label>
-							<input type="number" name="children" id="children" value="0" min="0">
+							<button type="button" class="button-control minus"></button>
+							<input type="text" name="children" id="children" value="0">
+							<button type="button" class="button-control plus"></button>
 						</p>
 						<button class="search-button button-blue" type="submit">Найти</button>
 					</form>

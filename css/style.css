@@ -40,6 +40,8 @@ a {
 
 .promo {
 	text-align: center;
+
+	background-color: #f2f2f2;
 	background-image: url("../img/background-photo.jpg");
 	background-position: bottom center;
 	background-repeat: no-repeat;
@@ -78,7 +80,7 @@ a {
 	text-align: center;
 }
 
-.reservation a {
+.reservation .button-drop {
 	font-size: 21px;
 	font-weight: 700;
 	line-height: 26px;
@@ -120,6 +122,55 @@ a {
 .reservation-item input:focus {
 	outline: 2px solid #e5e5e5;
 	background-color: #ffffff;
+}
+
+.button-control {
+	background-color: #f2f2f2;
+	width: 38px;
+	height: 38px;
+	border: none;
+	background-position: center;
+	background-repeat: no-repeat;
+	outline: none;
+}
+
+.calendar {
+	background-image: url("../img/calendar.png");
+}
+
+.calendar:hover,
+.calendar:focus {
+	background-image: url(../img/calendar-black.svg);
+}
+
+.calendar:active {
+	background-image: url(../img/calendar-blue.svg);
+}
+
+.minus {
+	background-image: url("../img/minus.svg");
+}
+
+.minus:hover,
+.minus:focus {
+	background-image: url(../img/minus-black.svg);
+}
+
+.minus:active {
+	background-image: url(../img/minus-blue.svg);
+}
+
+.plus {
+	background-image: url("../img/plus.svg");
+}
+
+.plus:hover,
+.plus:focus {
+	background-image: url(../img/plus-black.svg);
+}
+
+.plus:active {
+	background-image: url(../img/plus-blue.svg);
 }
 
 .search-button {
