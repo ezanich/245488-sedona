@@ -36,10 +36,6 @@ a {
 	overflow: hidden;
 }
 
-.main-header {
-	height: 56px;
-}
-
 .main-logo {
 	width: 140px;
 	height: 71px;
@@ -51,11 +47,37 @@ a {
 	flex-direction: column;
 }
 
+.main-logo {
+	align-self: center;
+	position: absolute;
+}
+
 .site-navigation {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	min-height: 56px;
+	display: flex;
+	align-items: center;
+}
+
+.site-navigation a {
+	display: block;
+	width: 239px;
+	height: 56px;
+}
+
+.site-navigation li:first-child,
+.site-navigation li:nth-child(2) {
+	justify-content: flex-start;
+}
+
+.site-navigation li:nth-child(3) {
+	justify-content: flex-end;
+	margin-left: auto;
+}
+
+.site-navigation li:last-child {
+	margin-left:0;
 }
 
 .site-navigation a:hover,
@@ -74,7 +96,6 @@ a {
 .promo {
 	display: flex;
 	flex-direction: column;
-
 	justify-content: space-between;
 	align-items: center;
 
@@ -257,7 +278,6 @@ a {
 }
 
 .choosing-hotel {
-	min-height: 454px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -266,13 +286,11 @@ a {
 
 .hotels-list {
 	list-style: none;
-	
 }
 
 .hotel-description {
 	display: flex;
 	justify-content: flex-start;
-	min-height: 152px;
 }
 
 .hotel-description div:last-child {
@@ -347,8 +365,6 @@ a {
 
 	display: flex;
 	justify-content: space-between;
-
-	min-height: 120px;
 }
 
 .main-footer span {
