@@ -36,11 +36,6 @@ a {
 	overflow: hidden;
 }
 
-.main-logo {
-	width: 140px;
-	height: 71px;
-}
-
 .main-navigation {
 	font-weight: 700;
 	display: flex;
@@ -48,8 +43,9 @@ a {
 }
 
 .main-logo {
-	align-self: center;
 	position: absolute;
+	left: 50%;
+	margin-left: -70px;
 }
 
 .site-navigation {
@@ -58,26 +54,20 @@ a {
 	list-style: none;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-.site-navigation a {
+.site-navigation li {
 	display: block;
-	width: 239px;
-	height: 56px;
-}
-
-.site-navigation li:first-child,
-.site-navigation li:nth-child(2) {
-	justify-content: flex-start;
+	min-width: 239px;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .site-navigation li:nth-child(3) {
-	justify-content: flex-end;
-	margin-left: auto;
-}
-
-.site-navigation li:last-child {
-	margin-left:0;
+	margin-left: 244px;
 }
 
 .site-navigation a:hover,
