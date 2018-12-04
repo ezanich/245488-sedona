@@ -14,6 +14,10 @@ body {
 .main-container {
 	box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 	background-color: #ffffff;
+
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 a {
@@ -34,10 +38,36 @@ a {
 
 .main-navigation {
 	font-weight: 700;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-logo {
+	position: absolute;
+	left: 50%;
+	margin-left: -70px;
 }
 
 .site-navigation {
+	margin: 0;
+	padding: 0;
 	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.site-navigation li {
+	display: block;
+	min-width: 239px;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.site-navigation li:nth-child(3) {
+	margin-left: 244px;
 }
 
 .site-navigation a:hover,
@@ -54,7 +84,10 @@ a {
 }
 
 .promo {
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 
 	background-color: #4d3d3d;
 	background-image: url("../img/background-photo.jpg");
@@ -62,11 +95,25 @@ a {
 	background-repeat: no-repeat;
 }
 
+.promo-image {
+	height: 510px;
+}
+
 .promo-text {
 	background-color: #ffffff;
+
+	width: 1200px;
+	min-height: 216px;
+
+	text-align: center;
 }
 
 .promo-text h2 {
+	width: 450px;
+
+	margin-left: auto;
+	margin-right: auto;
+
 	font-size: 21px;
 	font-weight: 700;
 }
@@ -76,7 +123,12 @@ a {
 }
 
 .reserve {
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+
+	height: 292px;
 }
 
 .reserve b {
@@ -88,9 +140,11 @@ a {
 .reserve p {
 	line-height: 24px;
 	color: #333333;
+	text-align: center;
+
 }
 
-.reserve .button-drop {
+.button-drop {
 	font-size: 21px;
 	font-weight: 700;
 	color: #ffffff;
@@ -106,6 +160,16 @@ a {
 .button-drop:active {
 	background-color: #503e33;
 	color: rgba(255, 255, 255, 0.3);
+}
+
+.reservation {
+	width: 576px;
+	min-height: 395px;
+}
+
+.reservation-form {
+	text-align: center;
+
 }
 
 .reservation-item label {
@@ -203,8 +267,24 @@ a {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+.choosing-hotel {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
 .hotels-list {
 	list-style: none;
+}
+
+.hotel-description {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.hotel-description div:last-child {
+	margin-left: auto;
 }
 
 .hotel-name h3 {
@@ -272,6 +352,9 @@ a {
 
 .main-footer {
 	background-color: rgba(255, 255, 255, 0.5);
+
+	display: flex;
+	justify-content: space-between;
 }
 
 .main-footer span {
