@@ -123,7 +123,6 @@ a {
 	background-image: url(../img/polygon.svg);
 	background-position: bottom center;
 	background-repeat: no-repeat;
-
 }
 
 .promo-text h2 {
@@ -200,6 +199,7 @@ a {
 	padding-top: 30px;
 
 	background-color: #ffffff;
+	box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 .reservation-form {
@@ -220,7 +220,6 @@ a {
 .reservation-item:nth-child(4) {
 	width: 230px;
 	margin-bottom: 55px;
-
 }
 
 .reservation-item label {
@@ -366,25 +365,46 @@ a {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-
 }
 
 .hotels-list {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .hotel-description {
 	display: flex;
-	justify-content: flex-start;
+
+	border-top: 1px solid #f2f2f2;
+}
+
+.hotel-description:last-child {
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.hotel-image {
+	width: 135px;
+	height: 90px;
+	margin: 30px 30px 30px 72px;
 }
 
 .hotel-description div:last-child {
 	margin-left: auto;
 }
 
+.hotel-info {
+	display: flex;
+	flex-direction: column;
+}
+
 .hotel-name h3 {
 	font-size: 21px;
 	font-weight: 700;
+
+	display: block;
+	margin-top: 25px;
+	margin-bottom: 5px;
 }
 
 .hotel-name:hover,
@@ -396,10 +416,21 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-
 .hotel-type,
 .hotel-price {
 	color: #333333;
+}
+
+.hotel-type,
+.button-info {
+	display: inline-block;
+	width: 110px;
+}
+
+.hotel-price,
+.button-reserve {
+	display: inline-block;
+	width: 143px;
 }
 
 .button-info {
@@ -408,6 +439,11 @@ a {
 	font-weight: 700;
 
 	background-color: #81b3d2;
+
+	margin-top: 11px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: center;
 }
 
 .button-info:hover,
@@ -427,6 +463,11 @@ a {
 	font-weight: 700;
 
 	background-color: #766357;
+
+	margin-left: 2px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: center;
 }
 
 .button-reserve:hover,
@@ -439,7 +480,23 @@ a {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-.rating {
+.hotel-stars {
+	margin-top: 30px;
+	margin-right: 72px;
+	text-align: right;	
+}
+
+.hotel-rating {
+	display: block;
+	width: 111px;
+
+	margin-right: 72px;
+	margin-top: 36px;
+	padding-top: 3px; 
+	padding-bottom: 3px;
+
+	text-align: center;
+
 	line-height: 21px;
 	color: #666666;
 	background-color: #f2f2f2;
@@ -453,6 +510,10 @@ a {
 
 	margin-top: 473px;
 	position: relative;
+}
+
+.inner-footer {
+	margin-top: auto;
 }
 
 .main-footer div {
@@ -478,20 +539,54 @@ a {
 }
 
 .social-button {
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 46px;
-	height: 34px;
+	height: 48px;
 	background-color: #81b3d2;
 	margin-top: 36px;
 	margin-right: 6px;
-	padding-top: 13px; 
 }
 
 .social li:first-child {
 	margin-left: 124px;
 }
 
-.copyright {
-	
+.social-button:hover,
+.social-button:focus {
+	background-color: #669ec0;
 }
 
+.social-button:active {
+	background-color: #5496bd;
+}
+
+.social-button:active path {
+	opacity: 0.3;
+}
+
+.copyright {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.copyright-button {
+	width: 115px;
+	height: 41px;
+	margin-left: 8px;
+}
+
+.copyright p {
+	margin-top: 13px;
+}
+
+.copyright-button:hover path,
+.copyright-button:focus path {
+	fill: #81b3d2;
+}
+
+.copyright-button:active path {
+	fill: #bdbbbc;
+}
