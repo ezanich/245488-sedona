@@ -18,6 +18,8 @@ body {
 	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
+
+	position: relative;
 }
 
 a {
@@ -277,6 +279,7 @@ input[type="radio"].visually-hidden {
 .reservation-item input:focus {
 	outline: 2px solid #e5e5e5;
 	background-color: #ffffff;
+	outline-offset: -2px;
 }
 
 .button-control {
@@ -311,31 +314,29 @@ input[type="radio"].visually-hidden {
 }
 
 .button-minus {
-	background-image: url("../img/minus.svg");
+	font-size: 30px;
+	font-weight: 700;
+	color: rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+.button-plus {
+	font-size: 25px;
+	font-weight: 700;
+	color: rgba(0, 0, 0, 0.3);
 	cursor: pointer;
 }
 
 .button-minus:hover,
-.button-minus:focus {
-	background-image: url(../img/minus-black.svg);
-}
-
-.button-minus:active {
-	background-image: url(../img/minus-blue.svg);
-}
-
-.button-plus {
-	background-image: url("../img/plus.svg");
-	cursor: pointer;
-}
-
+.button-minus:focus,
 .button-plus:hover,
 .button-plus:focus {
-	background-image: url(../img/plus-black.svg);
+	color: #000000;
 }
 
+.button-minus:active,
 .button-plus:active {
-	background-image: url(../img/plus-blue.svg);
+	color: #81b3d2;
 }
 
 .search-button {
@@ -393,7 +394,7 @@ input[type="radio"].visually-hidden {
 	margin: 30px 30px 30px 72px;
 }
 
-.hotel-description div:last-child {
+.rating-and-stars {
 	margin-left: auto;
 }
 
@@ -428,6 +429,7 @@ input[type="radio"].visually-hidden {
 .hotel-type,
 .button-info {
 	display: inline-block;
+	vertical-align: center;
 	width: 110px;
 }
 
@@ -512,11 +514,12 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	justify-content: space-between;
 
-	margin-top: -128px;
-	position: relative;
+	position: absolute;
+	bottom: 0;
 }
 
 .inner-footer {
+	position: relative;
 	margin-top: auto;
 }
 
@@ -530,8 +533,8 @@ input[type="radio"].visually-hidden {
 	font-weight: 700;
 	line-height: 26px;
 
-	padding-top: 46px;
-	padding-bottom: 50px;
+	padding-top: 44px;
+	padding-bottom: 56px;
 }
 
 .social ul {
@@ -549,7 +552,7 @@ input[type="radio"].visually-hidden {
 	width: 46px;
 	height: 48px;
 	background-color: #81b3d2;
-	margin-top: 36px;
+	margin-top: 34px;
 	margin-right: 6px;
 }
 
@@ -583,7 +586,7 @@ input[type="radio"].visually-hidden {
 }
 
 .copyright p {
-	margin-top: 13px;
+	margin-top: 6px;
 }
 
 .copyright-button:hover path,
