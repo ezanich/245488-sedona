@@ -31,7 +31,7 @@
 	                <h2 class="visually-hidden">Выбор параметров отеля</h2>
 
 	                <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
-	                	<fieldset>
+	                	<fieldset class="filter-infrastructure">
 	                		<legend>Инфраструктура:</legend>
 	                		<ul>
 	                			<li class="filter-option">
@@ -48,7 +48,7 @@
 	                			</li>
 	                		</ul>
 	                	</fieldset>
-	                	<fieldset>
+	                	<fieldset class="filter-type">
 	                		<legend>Тип жилья:</legend>
 	                		<ul>
 	                			<li class="filter-option">
@@ -65,19 +65,23 @@
 	                			</li>
 	                		</ul>
 	                	</fieldset>
-	                	<fieldset>
-	                		<legend>Стоимость в сутки (Р):</legend>
-	                		<label for="price-field-from">От</label>
-	                		<input type="text" name="price" id="price-field-from" value="0">
-	                		<label for="price-field-to">До</label>
-	                		<input type="text" name="price" id="price-field-to" value="3000">
-	                    	<div class="slider-price">
-	                        	<div class="slider-range"></div>
-	                        	<button type="button" class="slider-handle"></button>
-	                        	<button type="button" class="slider-handle"></button>
-	                    	</div>
-	                	</fieldset>
-	                	<button type="submit">Показать</button>
+                        <div class="filter-right">
+    	                	<fieldset class="filter-price">
+    	                		<legend>Стоимость в сутки (Р):</legend>
+    	                		<div class="price-control">
+                                    <label for="price-field-from">От</label>
+        	                		<input type="text" name="price" id="price-field-from" value="0">
+        	                		<label for="price-field-to">До</label>
+        	                		<input type="text" name="price" id="price-field-to" value="3000">
+                                </div>
+    	                    	<div class="slider-price">
+    	                        	<div class="slider-range"></div>
+    	                        	<button type="button" class="slider-handle"></button>
+    	                        	<button type="button" class="slider-handle"></button>
+    	                    	</div>
+    	                	</fieldset>
+    	                	<button class="button-transparent" type="submit">Показать</button>
+                        </div>    
 	                </form>
 	            </section>
 
