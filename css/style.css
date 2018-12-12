@@ -529,7 +529,10 @@ input[type="radio"].visually-hidden {
 	display: flex;
 
 	padding-top: 28px;
+}
 
+.filters-form input[type="text"] {
+	color: #ffffff;
 }
 
 .filters-form fieldset {
@@ -572,23 +575,109 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-price legend {
-	margin-bottom: 9px;
+	margin-bottom: 5px;
 }
 
 .price-control {
+	width: 315px;
+	margin-bottom: 18px;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
+	cursor: pointer;
+
+	position: relative;
 }
 
 .price-control label {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
+	margin-bottom: 3px;
+	margin-top: 3px;
+    padding-left: 65px;
+	cursor: pointer;
+}
+
+.price-control input {
+    width: 50px;
+    margin: 0;
+
+    color: inherit;
+    font: inherit;
+
+    background: none;
+    border: none;
+
+    vertical-align: middle;
+}
+
+.price-control::after {
+    content: "";
+    position: absolute;
+
+    width: 2px;
+    height: 22px;
+
+    background: #ffffff;
+
+    top: 5px;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.slider-price {
+	position: relative;
+
+}
+
+.slider-range {
+	height: 2px;
+	width: 317px;
+
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.slider-range::before {
+	content: "";
+	position: absolute;
+	width: 252px;
+    height: 2px;
+
+    background: #ffffff;
+}
+
+.slider-handle {
+	padding: 0;
+	cursor: pointer;
+
+	width: 20px;
+    height: 20px;
+
+    background-color: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%; 
+
+    position: absolute;
+    top: -9px;
+}
+
+.slider-handle-min {
+	left: 0;
+}
+
+.slider-handle-max {
+	left: 252px;
+}
+
+.slider-handle:hover {
+	width: 22px;
+	height: 22px;
+	border: 9px solid #ffffff;
 }
 
 .button-transparent {
 	margin-left: 95px;
-	margin-top: 17px;
-	padding: 6px 35px;
+	margin-top: 23px;
+	padding: 6px 34px;
 
     line-height: 20px;
     color: #ffffff;
@@ -600,8 +689,31 @@ input[type="radio"].visually-hidden {
     cursor: pointer;
 }
 
-.filters-form input[type="text"] {
-	color: #ffffff;
+.button-transparent:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.sort {
+	display: flex;
+}
+
+.result {
+	font-size: 21px;
+  	font-weight: 700;
+    line-height: 26px;
+
+    margin-left: 72px;
+    margin-top: 28px;
+    margin-bottom: 30px;
+}
+
+.sort-by {
+	font-size: 12px;
+	line-height: 18px;
+
+	margin-left: 49px;
+	margin-top: 34px;
 }
 
 .choosing-hotel {
