@@ -563,6 +563,35 @@ input[type="radio"].visually-hidden {
 
 .filter-option {
 	margin-bottom: 20px;
+
+}
+
+.filter-option label {
+	position: relative;
+	margin-left: 41px;
+	cursor: pointer;
+}
+
+.filter-checkbox + label::before {
+	content: "";
+
+	position: absolute;
+	left: -42px;
+
+	width: 27px;
+	height: 23px;
+
+	background-image: url(../img/checkbox-off.svg);
+	background-position: top left;
+	background-repeat: no-repeat; 
+}
+
+.filter-checkbox:checked + label::before {
+	background-image: url(../img/checkbox-on.svg);
+}
+
+.filter-checkbox:disabled + label::before {
+	opacity: 0.3;
 }
 
 .filter-price {
@@ -626,7 +655,6 @@ input[type="radio"].visually-hidden {
 
 .slider-price {
 	position: relative;
-
 }
 
 .slider-range {
@@ -722,6 +750,62 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;
 }
 
+.sort-by span {
+	margin-right: 36px;
+}
+
+.sort-by a {
+	margin-right: 30px;
+	color: rgba(0, 0, 0, 0.3);
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-by .current-sort {
+	color: #81b3d2;
+	border-bottom: none;
+}
+
+.sort-by a:hover,
+.sort-by a:focus {
+	color: #81b3d2;
+}
+
+.sort-by a:active {
+	color: #000000;
+	border-bottom: none;
+}
+
+.sort-icon {
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: 72px;
+}
+
+.sort-trangle {
+	padding-right: 8px;
+}
+
+.sort-trangle path {
+	fill: #cacaca;
+}
+
+.sort-trangle:hover path,
+.sort-trangle:focus path {
+	fill: unset;
+}
+
+.sort-trangle:active path {
+	fill: #81b3d2;
+}
+
+.sort-icon a:last-child {
+	padding-right: 0;
+}
+
+.current-sort path {
+	fill: #81b3d2;
+}
+
 .hotels-list {
 	list-style: none;
 	margin: 0;
@@ -741,7 +825,7 @@ input[type="radio"].visually-hidden {
 .hotel-image {
 	width: 135px;
 	height: 90px;
-	margin: 30px 30px 30px 72px;
+	margin: 31px 30px 29px 72px;
 }
 
 .rating-and-stars {
@@ -758,8 +842,8 @@ input[type="radio"].visually-hidden {
 	font-weight: 700;
 
 	display: block;
-	margin-top: 25px;
-	margin-bottom: 5px;
+	margin-top: 26px;
+	margin-bottom: 4px;
 }
 
 .hotel-name:hover,
@@ -781,6 +865,10 @@ input[type="radio"].visually-hidden {
 	display: inline-block;
 	vertical-align: middle;
 	width: 110px;
+}
+
+.hotel-type {
+	margin-right: 3px;
 }
 
 .hotel-price,
@@ -846,10 +934,10 @@ input[type="radio"].visually-hidden {
 
 .hotel-rating {
 	display: block;
-	width: 111px;
+	width: 110px;
 
 	margin-right: 72px;
-	margin-top: 36px;
+	margin-top: 38px;
 	padding-top: 3px; 
 	padding-bottom: 3px;
 
@@ -885,7 +973,7 @@ input[type="radio"].visually-hidden {
 	font-weight: 700;
 	line-height: 26px;
 
-	padding-top: 44px;
+	padding-top: 46px;
 	padding-bottom: 56px;
 }
 
@@ -904,7 +992,7 @@ input[type="radio"].visually-hidden {
 	width: 46px;
 	height: 48px;
 	background-color: #81b3d2;
-	margin-top: 34px;
+	margin-top: 36px;
 	margin-right: 6px;
 }
 
@@ -932,13 +1020,13 @@ input[type="radio"].visually-hidden {
 }
 
 .copyright-button {
-	width: 115px;
-	height: 41px;
-	margin-left: 8px;
+	width: 114px;
+	height: 44px;
+	margin-left: 9px;
 }
 
 .copyright p {
-	margin-top: 6px;
+	margin-top: 7px;
 }
 
 .copyright-button:hover path,
