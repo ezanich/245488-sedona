@@ -412,7 +412,7 @@ input[type="radio"].visually-hidden {
 	width: 310px;
 	padding: 8px 13px;
 
-	margin-left: auto;
+	
 }
 
 .reservation-item:nth-child(3) label {
@@ -429,6 +429,8 @@ input[type="radio"].visually-hidden {
 .reservation-item:nth-child(4) input {
 	width: 38px;
 	margin: 0;
+	padding: 8px 5px;
+	text-align: center;
 } 
 
 .reservation-item input:hover {
@@ -555,7 +557,7 @@ input[type="radio"].visually-hidden {
 	line-height: 21px;
 	font-weight: 700;
 
-	margin-bottom: 17px;
+	margin-bottom: 18px;
 }
 
 .filters-form ul {
@@ -569,18 +571,21 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-type {
-	margin-left: 95px;
+	margin-left: 96px;
 }
 
 .filter-option {
 	margin-bottom: 20px;
-
 }
 
 .filter-option label {
 	position: relative;
 	margin-left: 41px;
 	cursor: pointer;
+}
+
+.filter-infrastructure label {
+	margin-left: 40px;
 }
 
 .filter-checkbox + label::before {
@@ -621,7 +626,7 @@ input[type="radio"].visually-hidden {
 .price-control {
 	width: 315px;
 	height: 32px;
-	margin-bottom: 18px;
+	margin-bottom: 19px;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
 	cursor: pointer;
@@ -634,12 +639,14 @@ input[type="radio"].visually-hidden {
 	vertical-align: middle;
 	margin-bottom: 3px;
 	margin-top: 3px;
-    padding-left: 65px;
+    padding-left: 66px;
 	cursor: pointer;
+	text-align: center;
 }
 
 .price-control input {
     width: 50px;
+    height: 30px;
     margin: 0;
 
     color: inherit;
@@ -697,7 +704,7 @@ input[type="radio"].visually-hidden {
     border-radius: 50%; 
 
     position: absolute;
-    top: -9px;
+    top: -8px;
 }
 
 .slider-handle-min {
