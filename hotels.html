@@ -31,67 +31,80 @@
 	                <h2 class="visually-hidden">Выбор параметров отеля</h2>
 
 	                <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
-	                	<fieldset>
+	                	<fieldset class="filter-infrastructure">
 	                		<legend>Инфраструктура:</legend>
 	                		<ul>
 	                			<li class="filter-option">
-	                				<input type="checkbox" name="pool" id="pool-checkbox" checked>
+	                				<input class="visually-hidden filter-checkbox" type="checkbox" name="pool" id="pool-checkbox" checked>
 	                				<label for="pool-checkbox">Бассейн</label>
 	                			</li>
 	                			<li class="filter-option">
-	                				<input type="checkbox" name="parking" id="parking-checkbox">
+	                				<input class="visually-hidden filter-checkbox" type="checkbox" name="parking" id="parking-checkbox">
 	                				<label for="parking-checkbox">Парковка</label>
 	                			</li>
 	                			<li class="filter-option">
-	                				<input type="checkbox" name="wi-fi" id="wifi-checkbox">
+	                				<input class="visually-hidden filter-checkbox" type="checkbox" name="wi-fi" id="wifi-checkbox">
 	                				<label for="wifi-checkbox">Wi-Fi</label>
 	                			</li>
 	                		</ul>
 	                	</fieldset>
-	                	<fieldset>
+	                	<fieldset class="filter-type">
 	                		<legend>Тип жилья:</legend>
 	                		<ul>
 	                			<li class="filter-option">
-	                				<input type="checkbox" name="hotel" id="hotel-checkbox" checked>
+	                				<input class="visually-hidden filter-checkbox" type="checkbox" name="hotel" id="hotel-checkbox" checked>
 	                				<label for="hotel-checkbox">Гостиница</label>
 	                			</li>
 	                			<li class="filter-option">
-	                				<input type="checkbox" name="motel" id="motel-checkbox" checked>
+	                				<input class="visually-hidden filter-checkbox" type="checkbox" name="motel" id="motel-checkbox" checked>
 	                				<label for="motel-checkbox">Мотель</label>
 	                			</li>
 	                			<li class="filter-option">
-	                				<input type="checkbox" name="apartment" id="apartment-checkbox" checked>
+	                				<input class="visually-hidden filter-checkbox" type="checkbox" name="apartment" id="apartment-checkbox" checked>
 	                				<label for="apartment-checkbox">Апартаменты</label>
 	                			</li>
 	                		</ul>
 	                	</fieldset>
-	                	<fieldset>
-	                		<legend>Стоимость в сутки (Р):</legend>
-	                		<label for="price-field-from">От</label>
-	                		<input type="text" name="price" id="price-field-from" value="0">
-	                		<label for="price-field-to">До</label>
-	                		<input type="text" name="price" id="price-field-to" value="3000">
-	                    	<div class="slider-price">
-	                        	<div class="slider-range"></div>
-	                        	<button type="button" class="slider-handle"></button>
-	                        	<button type="button" class="slider-handle"></button>
-	                    	</div>
-	                	</fieldset>
-	                	<button type="submit">Показать</button>
+                        <div class="filter-right">
+    	                	<fieldset class="filter-price">
+    	                		<legend>Стоимость в сутки (Р):</legend>
+    	                		<div class="price-control">
+                                    <label for="price-field-from">От</label>
+        	                		<input type="text" name="price" id="price-field-from" value="0">
+        	                		<label for="price-field-to">До</label>
+        	                		<input type="text" name="price" id="price-field-to" value="3000">
+                                </div>
+    	                    	<div class="slider-price">
+    	                        	<div class="slider-range"></div>
+    	                        	<button type="button" class="slider-handle slider-handle-min"></button>
+    	                        	<button type="button" class="slider-handle slider-handle-max"></button>
+    	                    	</div>
+    	                	</fieldset>
+    	                	<button class="button-transparent" type="submit">Показать</button>
+                        </div>    
 	                </form>
 	            </section>
 
 	            <section class="sort">
 	            	<h2 class="visually-hidden">Сортировка отелей</h2>
 	            	<b class="result">Найдено: 3</b>
-	            	<p class="sort-by">
-	            		<span>Сортировка по:</span>
-	            		<a href="#">По цене</a>
+	            	<div class="sort-by">
+	            		<span>Сортировка:</span>
+	            		<a class="current-sort">По цене</a>
 	            		<a href="#">По типу</a>
 	            		<a href="#">По рейтингу</a>
-	                <div>
-	                  <a href="#" class="sort-trangle-up"></a>
-	                  <a href="#" class="sort-trangle-down"></a>
+                    </div>    
+	                <div class="sort-icon">
+	                    <a href="#" class="sort-trangle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                                <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+                            </svg>
+                        </a>
+	                    <a href="#" class="sort-trangle current-sort">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                                <path fill="#231F20" d="M5.5 10L0 0h11"/>
+                            </svg>
+                        </a>
 	                </div>
 	            </section>
 
