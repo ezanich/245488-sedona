@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 
-	font-family: "PT Sans", Arial, sans-serif; 
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 400;
@@ -65,16 +65,23 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;
 }
 
-.site-navigation li {
-	min-width: 239px;
+.navigation-option {
+	width: 239px;
 	text-align: center;
-	padding-top: 15px;
+	padding-top: 14px;
 	padding-bottom: 15px;
-	margin: 0;
 }
 
-.site-navigation li:nth-child(3) {
+.navigation-option:nth-child(3) {
 	margin-left: 244px;
+}
+
+.navigation-option:nth-child(2n) a {
+	padding-left: 7px;
+}
+
+.navigation-option:nth-child(4n) a {
+	padding-left: 15px;
 }
 
 .site-navigation a:hover,
@@ -112,7 +119,7 @@ input[type="radio"].visually-hidden {
 	text-align: center;
 
 	position: relative;
-	margin-top: 78px;
+	margin-top: 79px;
 }
 
 .promo-text::before {
@@ -176,12 +183,13 @@ input[type="radio"].visually-hidden {
 	margin-top: 47px;
 	margin-left: 120px;
 	margin-right: 120px;
+	margin-bottom: 23px;
+
 }
 
 .first-feature p {
-	margin-top: 24px;
+	margin-top: 21px;
 	width: 300px;
-
 }
 
 .features-list {
@@ -205,14 +213,14 @@ input[type="radio"].visually-hidden {
 
 	margin-top: 161px;
 	margin-bottom: 24px;
-} 
+}
 
 .features-list p {
 	color: #333333;
 	width: 285px;
 
 	margin-left: auto;
-	margin-right: auto; 
+	margin-right: auto;
 }
 
 .features-list li:first-child {
@@ -259,10 +267,11 @@ input[type="radio"].visually-hidden {
 	margin-top: 47px;
 	margin-left: 124px;
 	margin-right: 125px;
+	margin-bottom: 23px;
 }
 
 .second-feature p {
-	margin-top: 24px;
+	margin-top: 21px;
 	width: 303px;
 }
 
@@ -289,9 +298,9 @@ input[type="radio"].visually-hidden {
 	margin-top: 46px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 25px;
 
 	width: 150px;
-
 }
 
 .other-features-list p,
@@ -302,7 +311,7 @@ input[type="radio"].visually-hidden {
 .other-features-list p {
 	width: 261px;
 
-	margin: 25px auto 57px auto;
+	margin: 21px auto 58px auto;
 }
 
 .other-features-list li:last-child p {
@@ -323,7 +332,7 @@ input[type="radio"].visually-hidden {
 	line-height: 36px;
 	font-weight: 700;
 
-	padding-top: 53px;
+	padding-top: 52px;
 }
 
 .reserve p {
@@ -343,7 +352,7 @@ input[type="radio"].visually-hidden {
 	margin-top: 32px;
 	padding: 30px 139px;
 
-	text-align: center;	
+	text-align: center;
 	width: 569px;
 	box-sizing: border-box;
 }
@@ -359,37 +368,23 @@ input[type="radio"].visually-hidden {
 }
 
 .reservation {
-	width: 568px;
+	width: 569px;
 
 	position: absolute;
-	top: 293px;
+	top: 292px;
 	left: 50%;
-	margin-left: -284px;
-
-	padding-top: 30px;
+	margin-left: -285px;
 
 	background-color: #ffffff;
 	box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 
-	display: none;
-}
-
-@keyframes bounce {
-  0% {
-  	transform: scaleY(0);
-  }
-
-  100% {
-   transform: scaleY(1);
-  }
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.3s ease-in-out;
 }
 
 .reservation-show {
-	display: block;
-
-	animation: bounce 0.2s;
-	animation-fill-mode: forwards;
-	transform-origin: top;
+	max-height: 395px;
 }
 
 .reservation-form {
@@ -398,6 +393,8 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+
+	padding-top: 30px;
 }
 
 .reservation-item {
@@ -431,8 +428,6 @@ input[type="radio"].visually-hidden {
 
 	width: 310px;
 	padding: 8px 13px;
-
-	
 }
 
 .reservation-item:nth-child(3) label {
@@ -441,7 +436,7 @@ input[type="radio"].visually-hidden {
 }
 
 .reservation-item:nth-child(4) label {
-	padding-left: 30px;
+	padding-left: 29px;
 	width: 85px;
 }
 
@@ -449,9 +444,9 @@ input[type="radio"].visually-hidden {
 .reservation-item:nth-child(4) input {
 	width: 38px;
 	margin: 0;
-	padding: 8px 5px;
+	padding: 8px 4px 6px 4px;
 	text-align: center;
-} 
+}
 
 .reservation-item input:hover {
 	background-color: #ebebeb;
@@ -467,7 +462,7 @@ input[type="radio"].visually-hidden {
 
 .button-control {
 	background-color: #f2f2f2;
-	width: 38px;
+	width: 39px;
 
 	border: none;
 	background-position: center;
@@ -497,7 +492,7 @@ input[type="radio"].visually-hidden {
 }
 
 .button-minus {
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: 700;
 	color: rgba(0, 0, 0, 0.3);
 	cursor: pointer;
@@ -549,6 +544,26 @@ input[type="radio"].visually-hidden {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+@keyframes shake {
+	0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25%,
+  75% {
+    transform: translateX(-3px);
+  }
+
+  50% {
+    transform: translateX(3px);
+  }
+}
+
+.modal-error {
+	animation: shake 0.3s;
+}
+
 .filters {
 	background-color: #4279a2;
 	background-image: url("../img/filter-background.jpg");
@@ -591,7 +606,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-type {
-	margin-left: 96px;
+	margin-left: 95px;
 }
 
 .filter-option {
@@ -600,26 +615,26 @@ input[type="radio"].visually-hidden {
 
 .filter-option label {
 	position: relative;
-	margin-left: 41px;
+	padding-left: 41px;
 	cursor: pointer;
 }
 
 .filter-infrastructure label {
-	margin-left: 40px;
+	padding-left: 39px;
 }
 
 .filter-checkbox + label::before {
 	content: "";
 
 	position: absolute;
-	left: -42px;
+	left: 0;
 
 	width: 27px;
 	height: 23px;
 
 	background-image: url(../img/checkbox-off.svg);
 	background-position: top left;
-	background-repeat: no-repeat; 
+	background-repeat: no-repeat;
 }
 
 .filter-checkbox:checked + label::before {
@@ -664,7 +679,7 @@ input[type="radio"].visually-hidden {
 }
 
 .price-control input {
-    width: 50px;
+    width: 55px;
     height: 30px;
     margin: 0;
 
@@ -720,7 +735,7 @@ input[type="radio"].visually-hidden {
 
     background-color: #ababab;
     border: 8px solid #ffffff;
-    border-radius: 50%; 
+    border-radius: 50%;
 
     position: absolute;
     top: -8px;
@@ -738,6 +753,7 @@ input[type="radio"].visually-hidden {
 	width: 22px;
 	height: 22px;
 	border: 9px solid #ffffff;
+	top: -10px;
 }
 
 .button-transparent {
@@ -779,7 +795,7 @@ input[type="radio"].visually-hidden {
 	line-height: 18px;
 
 	margin-left: 49px;
-	margin-top: 34px;
+	margin-top: 35px;
 }
 
 .choosing-hotel {
@@ -789,7 +805,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sort-by span {
-	margin-right: 36px;
+	margin-right: 35px;
 }
 
 .sort-by a {
@@ -967,7 +983,11 @@ input[type="radio"].visually-hidden {
 .hotel-stars {
 	margin-top: 30px;
 	margin-right: 72px;
-	text-align: right;	
+	text-align: right;
+}
+
+.hotel-stars img {
+	padding-left: 3px;
 }
 
 .hotel-rating {
@@ -976,7 +996,7 @@ input[type="radio"].visually-hidden {
 
 	margin-right: 72px;
 	margin-top: 38px;
-	padding-top: 3px; 
+	padding-top: 3px;
 	padding-bottom: 3px;
 
 	text-align: center;
@@ -1020,7 +1040,7 @@ input[type="radio"].visually-hidden {
 
 	display: flex;
 	margin: 0;
-	padding: 0; 
+	padding: 0;
 }
 
 .social-button {
