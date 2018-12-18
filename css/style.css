@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 
-	font-family: "PT Sans", Arial, sans-serif; 
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 400;
@@ -190,7 +190,6 @@ input[type="radio"].visually-hidden {
 .first-feature p {
 	margin-top: 21px;
 	width: 300px;
-
 }
 
 .features-list {
@@ -214,14 +213,14 @@ input[type="radio"].visually-hidden {
 
 	margin-top: 161px;
 	margin-bottom: 24px;
-} 
+}
 
 .features-list p {
 	color: #333333;
 	width: 285px;
 
 	margin-left: auto;
-	margin-right: auto; 
+	margin-right: auto;
 }
 
 .features-list li:first-child {
@@ -269,7 +268,6 @@ input[type="radio"].visually-hidden {
 	margin-left: 124px;
 	margin-right: 125px;
 	margin-bottom: 23px;
-
 }
 
 .second-feature p {
@@ -303,7 +301,6 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 25px;
 
 	width: 150px;
-
 }
 
 .other-features-list p,
@@ -355,7 +352,7 @@ input[type="radio"].visually-hidden {
 	margin-top: 32px;
 	padding: 30px 139px;
 
-	text-align: center;	
+	text-align: center;
 	width: 569px;
 	box-sizing: border-box;
 }
@@ -398,7 +395,6 @@ input[type="radio"].visually-hidden {
 	justify-content: center;
 
 	padding-top: 30px;
-
 }
 
 .reservation-item {
@@ -432,8 +428,6 @@ input[type="radio"].visually-hidden {
 
 	width: 310px;
 	padding: 8px 13px;
-
-	
 }
 
 .reservation-item:nth-child(3) label {
@@ -452,7 +446,7 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 8px 4px 6px 4px;
 	text-align: center;
-} 
+}
 
 .reservation-item input:hover {
 	background-color: #ebebeb;
@@ -550,6 +544,26 @@ input[type="radio"].visually-hidden {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+@keyframes shake {
+	0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25%,
+  75% {
+    transform: translateX(-3px);
+  }
+
+  50% {
+    transform: translateX(3px);
+  }
+}
+
+.modal-error {
+	animation: shake 0.3s;
+}
+
 .filters {
 	background-color: #4279a2;
 	background-image: url("../img/filter-background.jpg");
@@ -620,7 +634,7 @@ input[type="radio"].visually-hidden {
 
 	background-image: url(../img/checkbox-off.svg);
 	background-position: top left;
-	background-repeat: no-repeat; 
+	background-repeat: no-repeat;
 }
 
 .filter-checkbox:checked + label::before {
@@ -721,7 +735,7 @@ input[type="radio"].visually-hidden {
 
     background-color: #ababab;
     border: 8px solid #ffffff;
-    border-radius: 50%; 
+    border-radius: 50%;
 
     position: absolute;
     top: -8px;
@@ -969,7 +983,7 @@ input[type="radio"].visually-hidden {
 .hotel-stars {
 	margin-top: 30px;
 	margin-right: 72px;
-	text-align: right;	
+	text-align: right;
 }
 
 .hotel-stars img {
@@ -982,7 +996,7 @@ input[type="radio"].visually-hidden {
 
 	margin-right: 72px;
 	margin-top: 38px;
-	padding-top: 3px; 
+	padding-top: 3px;
 	padding-bottom: 3px;
 
 	text-align: center;
@@ -1026,7 +1040,7 @@ input[type="radio"].visually-hidden {
 
 	display: flex;
 	margin: 0;
-	padding: 0; 
+	padding: 0;
 }
 
 .social-button {
