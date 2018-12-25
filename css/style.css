@@ -205,6 +205,8 @@ input[type="radio"].visually-hidden {
 .first-feature p {
 	width: 300px;
 	margin-top: 21px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .features-list {
@@ -288,6 +290,8 @@ input[type="radio"].visually-hidden {
 .second-feature p {
 	width: 303px;
 	margin-top: 21px;
+	margin-left: auto;
+	margin-right: auto; 
 }
 
 .other-features-list {
