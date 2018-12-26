@@ -17,11 +17,11 @@ try {
 }
 
 if (storage_adults) {
-  number_adults.value = storage_adults;
+    number_adults.value = storage_adults;
 }
 
 if (storage_child) {
-  number_child.value = storage_child;
+    number_child.value = storage_child;
 }
 
 link.addEventListener("click", function(evt) {
@@ -39,6 +39,6 @@ form.addEventListener("submit", function (evt) {
     	if (isStorageSupport) {
         	localStorage.setItem("number_adults", number_adults.value);
         	localStorage.setItem("number_child", number_child.value);
-      }
+        }
     }
 });

@@ -291,7 +291,7 @@ input[type="radio"].visually-hidden {
 	width: 303px;
 	margin-top: 21px;
 	margin-left: auto;
-	margin-right: auto; 
+	margin-right: auto;
 }
 
 .other-features-list {
@@ -580,40 +580,40 @@ input[type="radio"].visually-hidden {
 
 @-webkit-keyframes shake {
 	0%,
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
+  	100% {
+	    -webkit-transform: translateX(0);
+	            transform: translateX(0);
+  	}
 
-  25%,
-  75% {
-    -webkit-transform: translateX(-3px);
-            transform: translateX(-3px);
-  }
+	25%,
+	75% {
+	    -webkit-transform: translateX(-3px);
+	    		transform: translateX(-3px);
+	}
 
-  50% {
-    -webkit-transform: translateX(3px);
-            transform: translateX(3px);
-  }
+	50% {
+	    -webkit-transform: translateX(3px);
+            	transform: translateX(3px);
+	}
 }
 
 @keyframes shake {
 	0%,
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
+  	100% {
+    	-webkit-transform: translateX(0);
+            	transform: translateX(0);
+  	}
 
-  25%,
-  75% {
-    -webkit-transform: translateX(-3px);
-            transform: translateX(-3px);
-  }
+	25%,
+	75% {
+    	-webkit-transform: translateX(-3px);
+            	transform: translateX(-3px);
+  	}
 
-  50% {
-    -webkit-transform: translateX(3px);
-            transform: translateX(3px);
-  }
+	50% {
+    	-webkit-transform: translateX(3px);
+            	transform: translateX(3px);
+  	}
 }
 
 .modal-error {
@@ -751,7 +751,7 @@ input[type="radio"].visually-hidden {
     font: inherit;
     font-size: 14px;
     color: inherit;
-    
+
     background: none;
     border: none;
 }
