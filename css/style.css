@@ -61,6 +61,7 @@ input[type="radio"].visually-hidden {
 .main-logo {
 	position: absolute;
 	left: 50%;
+	z-index: 1;
 
 	margin-left: -70px;
 }
@@ -125,9 +126,28 @@ input[type="radio"].visually-hidden {
 	    -ms-flex-align: center;
 	        align-items: center;
 
+	position: relative;   
+	
+	padding-bottom: 80px;
+
 	background-color: #4d3d3d;
 	background-image: url("../img/background-photo.jpg");
 	background-position: center -83px;
+	background-repeat: no-repeat;
+}
+
+.promo::after {
+	content: "";
+
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	width: 100%;
+	height: 58px;
+
+	background-image: url(../img/polygon.svg);
+	background-position: bottom center;
 	background-repeat: no-repeat;
 }
 
@@ -136,37 +156,19 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-text {
-	position: relative;
 
 	width: 100%;
-	margin-top: 79px;
-
+	margin-top: 60px;
 	text-align: center;
 
 	background-color: #ffffff;
-}
-
-.promo-text::before {
-	content: "";
-
-	position: absolute;
-	top: -59px;
-	left: 0;
-
-	width: 100%;
-	height: 59px;
-
-	background-image: url(../img/polygon.svg);
-	background-position: bottom center;
-	background-repeat: no-repeat;
 }
 
 .promo-text h2 {
 	width: 450px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 45px;
-	padding-bottom: 8px;
+	padding-bottom: 9px;
 
 	font-size: 21px;
 	font-weight: 700;
@@ -314,7 +316,7 @@ input[type="radio"].visually-hidden {
 
 .other-features-list h3 {
 	width: 150px;
-	margin-top: 46px;
+	margin-top: 47px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 25px;
@@ -729,10 +731,10 @@ input[type="radio"].visually-hidden {
 	height: 32px;
 	margin-bottom: 19px;
 
+	font-size: 0;
+
 	border: 2px solid #ffffff;
 	border-radius: 2px;
-
-	cursor: pointer;
 }
 
 .price-control label {
@@ -740,17 +742,20 @@ input[type="radio"].visually-hidden {
 	vertical-align: middle;
 	margin-bottom: 3px;
 	margin-top: 3px;
-    padding-left: 66px;
+    padding-left: 65px;
+
+    font-size: 14px;
 }
 
 .price-control input {
-    width: 55px;
+    width: 60px;
     height: 30px;
-    margin: 0;
+    margin-left: 4px;
     vertical-align: middle;
 
     color: inherit;
     font: inherit;
+    font-size: 14px;
 
     background: none;
     border: none;
@@ -928,7 +933,7 @@ input[type="radio"].visually-hidden {
 
 .sort-trangle:hover path,
 .sort-trangle:focus path {
-	fill: unset;
+	fill: #000000;
 }
 
 .sort-trangle:active path {
@@ -980,6 +985,8 @@ input[type="radio"].visually-hidden {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
+
+	font-size: 0;
 }
 
 .hotel-name h3 {
@@ -1000,11 +1007,6 @@ input[type="radio"].visually-hidden {
 }
 
 .hotel-type,
-.hotel-price {
-	color: #333333;
-}
-
-.hotel-type,
 .button-info {
 	display: inline-block;
 	width: 110px;
@@ -1012,7 +1014,7 @@ input[type="radio"].visually-hidden {
 }
 
 .hotel-type {
-	margin-right: 3px;
+	margin-right: 5px;
 }
 
 .hotel-price,
@@ -1022,8 +1024,15 @@ input[type="radio"].visually-hidden {
 	vertical-align: middle;
 }
 
+.hotel-type,
+.hotel-price {
+	font-size: 14px;
+	color: #333333;
+}
+
 .button-info {
 	margin-top: 11px;
+	margin-right: 3px;
 	padding-top: 3px;
 	padding-bottom: 3px;
 
@@ -1033,6 +1042,7 @@ input[type="radio"].visually-hidden {
 	text-align: center;
 
 	background-color: #81b3d2;
+	font-size: 14px;
 }
 
 .button-info:hover,
@@ -1080,7 +1090,7 @@ input[type="radio"].visually-hidden {
 }
 
 .hotel-stars img {
-	padding-left: 3px;
+	padding-left: 2px;
 }
 
 .hotel-rating {
@@ -1199,7 +1209,7 @@ input[type="radio"].visually-hidden {
 }
 
 .copyright p {
-	margin-top: 7px;
+	margin-top: 6px;
 }
 
 .copyright-button:hover path,
