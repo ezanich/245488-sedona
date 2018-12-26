@@ -36,20 +36,20 @@ img {
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-  position: absolute;
+	position: absolute;
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
 
-  white-space: nowrap;
+	white-space: nowrap;
 
-  -webkit-clip-path: inset(100%);
-    clip-path: inset(100%);
-    	clip: rect(0 0 0 0);
-  overflow: hidden;
+	-webkit-clip-path: inset(100%);
+	clip-path: inset(100%);
+		clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .main-navigation {
@@ -115,6 +115,8 @@ input[type="radio"].visually-hidden {
 }
 
 .promo {
+	position: relative;
+
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -125,9 +127,6 @@ input[type="radio"].visually-hidden {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-
-	position: relative;   
-	
 	padding-bottom: 80px;
 
 	background-color: #4d3d3d;
@@ -156,7 +155,6 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-text {
-
 	width: 100%;
 	margin-top: 60px;
 	text-align: center;
@@ -342,9 +340,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 
 	display: -webkit-box;
-
 	display: -ms-flexbox;
-
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
@@ -413,9 +409,7 @@ input[type="radio"].visually-hidden {
 	        box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 
 	-webkit-transition: max-height 0.3s ease-in-out;
-
 	-o-transition: max-height 0.3s ease-in-out;
-
 	transition: max-height 0.3s ease-in-out;
 	overflow: hidden;
 }
@@ -680,6 +674,7 @@ input[type="radio"].visually-hidden {
 
 .filter-option label {
 	position: relative;
+
 	padding-left: 41px;
 
 	cursor: pointer;
@@ -753,10 +748,10 @@ input[type="radio"].visually-hidden {
     margin-left: 4px;
     vertical-align: middle;
 
-    color: inherit;
     font: inherit;
     font-size: 14px;
-
+    color: inherit;
+    
     background: none;
     border: none;
 }
