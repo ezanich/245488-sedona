@@ -399,6 +399,7 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	top: 100%;
 	left: 50%;
+	z-index: 3;
 
 	width: 569px;
 	max-height: 0;
@@ -619,6 +620,24 @@ input[type="radio"].visually-hidden {
 .modal-error {
 	-webkit-animation: shake 0.3s;
 	        animation: shake 0.3s;
+}
+
+.map {
+	position: relative;
+
+	min-height: 594px;
+}
+
+.map img {
+	position: absolute;
+	top: 0;
+	z-index: 1;
+} 
+
+.map iframe {
+	position: relative;
+	top: 0;
+	z-index: 2;
 }
 
 .filters {
@@ -1106,6 +1125,8 @@ input[type="radio"].visually-hidden {
 .main-footer {
 	position: absolute;
 	bottom: 0;
+	z-index: 3;
+
 
 	display: -webkit-box;
 
